@@ -36,7 +36,7 @@ To set up the Caption Generator backend locally, follow the instructions below:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mbahraoui/https://github.com/mbahraoui/CaptionGeneratorAPI.git
+   git clone https://github.com/mbahraoui/CaptionGeneratorAPI.git
    ```
    
 

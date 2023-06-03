@@ -1,6 +1,18 @@
 # Caption Generator API
 
-This repository contains the code for a Caption Generator API that utilizes the Django REST Framework, the nlpconnect/vit-gpt2-image-captioning pretrained model, and the OpenAI API to generate captions for Instagram posts.
+This is an Image Caption Generator, a Django REST API that generates captions for images.
+
+## How it Works
+
+1. The API accepts a POST request with a JSON payload containing the `img_url` of the image for which you want a caption.
+
+2. The image is processed using a pre-trained Vision Encoder-Decoder model, which extracts visual features from the image.
+
+3. The extracted features are passed through a pre-trained language model, specifically a ViT-GPT2 model, to generate a descriptive caption for the image.
+
+4. The generated caption is then used as a prompt to an OpenAI API, which refines and generates a final Instagram caption.
+
+5. The API returns the generated caption as a response in JSON format.
 ## Endpoint
 
 The backend exposes a single endpoint:
@@ -11,7 +23,7 @@ This endpoint accepts a POST request and returns a JSON response containing the 
 
 **Request Parameters:**
 
-- `img_link` (string): The link to the image to be processed.
+- `img_url` (string): The link to the image to be processed.
 
 **Example Request:**
 

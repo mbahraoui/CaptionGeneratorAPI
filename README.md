@@ -5,7 +5,7 @@ This repository contains the code for a Caption Generator API that utilizes the 
 
 The backend exposes a single endpoint:
 
-### `/caption_generator`
+### `/api/caption_generator`
 
 This endpoint accepts a POST request and returns a JSON response containing the caption for the provided image.
 
